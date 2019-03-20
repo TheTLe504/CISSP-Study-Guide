@@ -5,17 +5,22 @@
 
 ### Understand and apply concepts of confidentiality, integrity and availability
 #### Definitions and examples
-* Confidentiality - Making sure the right people can access the material.  Data must be classified so the administrators knows exactly who should have access.  Users must Identify themselves, authenticate, and then be given authorization before having access.  Contents must be encrypted or restricted for users who don't do the above.
+* Confidentiality - Ensure that the person can confirm their own identity. Data must be classified so the administrators knows exactly who should have access.  Users must Identify themselves, authenticate, and then be given authorization before having access.  Contents must be encrypted or restricted for users who don't do the above.
   * End to End symmetric encryption holds confidentiality because only users with a key can see the data
   * File permissions only allow authorized users to view the contents
-* Integrity - Protected from changes
-  * Hashing
+* Integrity - Ensure that data has not been changed or altered.
+  * 3 states of data.
+    * Active State - in memory.
+    * Passive state - in a hard drive.
+    * Transport state - Data being transferred from one system to another.
+  * Hashing.
   * Segregation of duties
   * approval checkpoints (SDLC)
   * RSA(uses HMC)
   * IPSec
-* Availability - Information is available to users when they need it
-  * Not vulnerable to DOS
+* Availability - Information is available to users when they need it.
+  * available time and location of access of certain files.
+  * Not vulnerable to DDOS
   * Has backups and redundancy to ensure no downtime
 
 #### How do they relate to each other?
@@ -71,10 +76,10 @@ Organizations operate in environments where laws, regulations, and compliance re
 
 ### Develop, document, and implement security policy, standards, procedures, and guidelines
 Examples below
-* Policy: write policy for people who use lab at work. no usb allow, need to take this training, etc etc
-* standards: FIPS 140-2 is a common cryptographic standard in the military. must do certain things to have your device certified.
-* procedure: you are tasked with the job of writing a procedure for analyzing computers that may contain malware
-* guidelines: this is not mandatory and no penalties happen if not followed. ex. i give guidelines for how to configure SMB shares at work since there are no SMB STIGs we must follow.
+* Policy: Policies are formal statements produced and supported by senior management. Example: no usb allow, need to take this training, no smoking on premise.
+* Standards: A mandatory actions or rules that give formal policies support and direction. Example: FIPS 140-2 is a common cryptographic standard in the military. Network device must have cryptographic modules on government systems.
+* procedure: Procedures are detailed step by step instructions to achieve a given goal or mandate. Example: SOP
+* guidelines: Guidelines are recommendations to users when specific standards do not apply.  Guidelines are designed to streamline certain processes according to what the best practices are. Guidelines, by nature, should open to interpretation and do not need to be followed to the letter. Example: Network appliance does not have a government STIG to follow. Guidelines state to follow vendor best practice instead. such as NetApp, VMware ESi, etc.
 
 ### Identify, analyze, and prioritize Business Continuity (BC) requirements
 * Develop and document scope and plan
@@ -92,7 +97,7 @@ Examples below
 * Identify threats and vulnerabilities - NIST 800-30 defines threat sources. Microsoft also has great threat model
 * Risk assessment/analysis - find all vulnerabilities and flaws in scope. prioritize them by level of effort to fix and the amount of risk of not fixing that.
 * Risk response - If you face risk, you can do one of the following things: avoid it, transfer it, mitigate it, or accept it
-* Countermeasure selection and implementation - If risk is identified, need to consider accountability, reliability, dependencies, CIA, when implementing a countermeasure. Think of solution to problem and other supplemental controls to help fix it. soemtimes you won't be able apply a patch to completely fix problem, so you will need some supplemental fixes (band aids)
+* Countermeasure selection and implementation - If risk is identified, need to consider accountability, reliability, dependencies, CIA, when implementing a countermeasure. Think of solution to problem and other supplemental controls to help fix it. sometimes you won't be able apply a patch to completely fix problem, so you will need some supplemental fixes (band aids)
 * Applicable types of controls (e.g., preventive, detective, corrective) - directive, deterrent, preventive, compensating, detective, corrective, recovery. a good plan usually contains most of the types of controls just listed. that is defense in depth
 * Security Control Assessment (SCA) -
 * Monitoring and measurement - make sure problems, vulnerabilities, failures are monitored. make sure metrics are recorded that document hours spent to fix and recover. cost from failure.  for network, get IDS and log server. do bi-weekly analysis to determine information system failures and patterns
