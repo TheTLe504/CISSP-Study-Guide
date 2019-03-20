@@ -27,7 +27,7 @@ Many varieties of EAP
   * PEAP : similar to EAP-TTLS, developed by cisco and microsoft
 * Firewalls - network segmentation
   *  Packet Filter: no decisions. set list of allow rules
-  *  Stateful: slower but more secure. compare packets to previous ones. 
+  *  Stateful: slower but more secure. compare packets to previous ones.
   *  Proxy: acts as middle man on network. does not give anything back if doesn't meet proxy rules
   *  application-layer proxy: make decissions on like HTTP, and layers 3 and 4
 * VoIP - voice over IP
@@ -38,7 +38,7 @@ Many varieties of EAP
 * Operation of hardware
 * Transmission media - properly encrypt media
 * Network Access Control (NAC) devices - 802.1X is port based network access control
-* Endpoint security - deep packet inspection. email filtering. 
+* Endpoint security - deep packet inspection. email filtering.
 * Content-distribution networks - series of distributed caching servers to imporve performance and lower latency. They find closest servers to you and go
 
 ### Implement secure communication channels according to design
