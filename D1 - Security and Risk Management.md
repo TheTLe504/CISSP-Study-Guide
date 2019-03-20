@@ -22,6 +22,9 @@
   * available time and location of access of certain files.
   * Not vulnerable to DDOS
   * Has backups and redundancy to ensure no downtime
+* Non-repudiation is the assurance that someone cannot deny the validity of something. Non-repudiation is a legal concept that is widely used in information security and refers to a service, which provides proof of the origin of data and the integrity of the data.
+
+Note: Some times CIA with Non-repudiation is known as CAIN
 
 #### How do they relate to each other?
 CIA TRIAD - You can't have maximum levels of everything
