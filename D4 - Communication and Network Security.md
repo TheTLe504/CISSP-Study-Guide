@@ -17,19 +17,19 @@
 
 * Internet Protocol (IP) networking - DHCP on LAN.  Lan connects to WAN. ISPs route traffic
 * Implications of multilayer protocols
-* Converged protocols - providing industrial controls, storage, voice, etc via Ethernet(tcp/udp)
-* Software-defined networks - seperates a router's control plane from data forwarding plane
+* Converged protocols - providing industrial controls, storage, voice, etc. via Ethernet(TCP/UDP)
+* Software-defined networks - separates a router's control plane from data forwarding plane
 * Wireless networks - WEP, WPA, WPA2. 802.11 is the wireless standard
 Many varieties of EAP
-  * LEAP : Cisco-proprietry, very bad
+  * LEAP : Cisco-proprietary, very bad
   * EAP-TLS : requires server/client certificates
   * EAP-TTLS : allows passwords for client-side authentication
-  * PEAP : similar to EAP-TTLS, developed by cisco and microsoft
+  * PEAP : similar to EAP-TTLS, developed by cisco and Microsoft
 * Firewalls - network segmentation
   *  Packet Filter: no decisions. set list of allow rules
   *  Stateful: slower but more secure. compare packets to previous ones.
   *  Proxy: acts as middle man on network. does not give anything back if doesn't meet proxy rules
-  *  application-layer proxy: make decissions on like HTTP, and layers 3 and 4
+  *  application-layer proxy: make decisions on like HTTP, and layers 3 and 4
 * VoIP - voice over IP
   * RTP for streaming
   * SRTP for secure communication
