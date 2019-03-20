@@ -5,7 +5,7 @@
 
 ### Understand and apply concepts of confidentiality, integrity and availability
 #### Definitions and examples
-* Confidentiality - Ensure that the person can confirm their own identity. Data must be classified so the administrators knows exactly who should have access.  Users must Identify themselves, authenticate, and then be given authorization before having access.  Contents must be encrypted or restricted for users who don't do the above.
+* Confidentiality - Access to information, assets, etc. should be granted only on a need to know basis so that information which is only available to some should not be accessible by everyone. Data must be classified so the administrators knows exactly who should have access.  Users must Identify themselves, authenticate, and then be given authorization before having access.  Contents must be encrypted or restricted for users who don't do the above.
   * End to End symmetric encryption holds confidentiality because only users with a key can see the data
   * File permissions only allow authorized users to view the contents
 * Integrity - Ensure that data has not been changed or altered.
